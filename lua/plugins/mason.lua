@@ -13,6 +13,7 @@ return {
         "tailwindcss-language-server",
         "emmet-ls",
         "json-lsp",
+        "yaml-language-server",
       },
     },
   },
