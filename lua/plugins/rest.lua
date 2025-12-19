@@ -2,6 +2,7 @@ return {
   "rest-nvim/rest.nvim",
   dependencies = {
     "nvim-lua/plenary.nvim",
+    "nvim-neotest/nvim-nio",
     {
       "nvim-treesitter/nvim-treesitter",
       opts = function(_, opts)
