@@ -1,10 +1,17 @@
 return {
-  { "ellisonleao/gruvbox.nvim" },
+  {
+    "folke/tokyonight.nvim",
+    opts = {
+      style = "moon", -- moon | storm | night | day
+      transparent = false,
+      terminal_colors = true,
+    },
+  },
 
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "tokyonight",
     },
   },
 }

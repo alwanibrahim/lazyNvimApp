@@ -6,3 +6,13 @@ debug
 foo.*
 *.log
 data
+.git
+.gitignore
+README.md
+LICENSE
+node_modules
+.cache
+.local
+.lazy
+.luarocks
+

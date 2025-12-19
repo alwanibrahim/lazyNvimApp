@@ -19,3 +19,11 @@ map("n", "<leader>tf", function()
 end, { desc = "Terminal float" })
 map("n", "sh", "<cmd>split | wincmd j<CR>", { desc = "Horizontal split" })
 map("n", "sv", "<cmd>vsplit | wincmd l<CR>", { desc = "Vertical split" })
+map("n", "<leader>gr", function()
+  vim.cmd("!git restore " .. vim.fn.expand("%"))
+end, { desc = "Git restore current file" })
+
+-- restore all files
+map("n", "<leader>gR", function()
+  vim.cmd("!git restore .")
+end, { desc = "Git restore all" })
