@@ -1,5 +1,0 @@
-
-### Get dummy JSON user
-GET https://jsonplaceholder.typicode.com/users/1
-Accept: application/json
-

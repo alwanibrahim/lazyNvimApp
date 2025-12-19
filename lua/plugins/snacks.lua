@@ -1,4 +1,3 @@
--- lua/plugins/snacks.lua
 return {
   "folke/snacks.nvim",
   opts = {
@@ -10,6 +9,9 @@ return {
         ".swn",
         ".swx",
       },
+    },
+    picker = {
+      enabled = false, -- 🔒 KUNCI
     },
   },
 }
