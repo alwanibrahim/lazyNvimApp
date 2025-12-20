@@ -6,6 +6,10 @@ local map = vim.keymap.set
 
 map("i", "jj", "<Esc>", { desc = "Exit insert (jj)" })
 map("i", "jk", "<Esc>", { desc = "Exit insert (jk)" })
+
+-- Terminal mode (WAJIB beda)
+map("t", "jj", "<C-\\><C-n>", { desc = "Exit terminal (jj)" })
+map("t", "jk", "<C-\\><C-n>", { desc = "Exit terminal (jk)" })
 map("n", "<leader>gg", "<cmd>LazyGit<CR>", { desc = "LazyGit" })
 map("n", "<leader>w", "<cmd>w<CR>", { desc = "Save file" })
 map("n", "<leader>th", function()
