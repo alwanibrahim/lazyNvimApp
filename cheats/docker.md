@@ -28,4 +28,4 @@ docker compose logs -f
 ## Cleanup
 docker system df
 docker system prune
-
+saya sangat santai kawan
