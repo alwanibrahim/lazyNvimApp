@@ -4,8 +4,6 @@ return {
     dependencies = {
       "hrsh7th/cmp-emoji",
       "roobert/tailwindcss-colorizer-cmp.nvim",
-      "hrsh7th/cmp-buffer",
-      "hrsh7th/cmp-path",
     },
     opts = function(_, opts)
       table.insert(opts.sources, { name = "emoji" })

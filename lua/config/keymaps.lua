@@ -1,7 +1,7 @@
--- Keymaps are automatically loaded on the VeryLazy event
--- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
--- Add any additional keymaps here
---
+-- -- Keymaps are automatically loaded on the VeryLazy event
+-- -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
+-- -- Add any additional keymaps here
+-- --
 local map = vim.keymap.set
 
 map("i", "jj", "<Esc>", { desc = "Exit insert (jj)" })
@@ -11,7 +11,7 @@ map("i", "jk", "<Esc>", { desc = "Exit insert (jk)" })
 map("t", "jj", "<C-\\><C-n>", { desc = "Exit terminal (jj)" })
 map("t", "jk", "<C-\\><C-n>", { desc = "Exit terminal (jk)" })
 map("n", "<leader>gg", "<cmd>LazyGit<CR>", { desc = "LazyGit" })
-map("n", "<leader>w", "<cmd>w<CR>", { desc = "Save file" })
+-- map("n", "<leader>w", "<cmd>w<CR>", { desc = "Save file" })
 map("n", "<leader>th", function()
   require("toggleterm").toggle(1, nil, nil, "horizontal")
 end, { desc = "Terminal horizontal" })
@@ -31,3 +31,12 @@ end, { desc = "Git restore current file" })
 map("n", "<leader>gR", function()
   vim.cmd("!git restore .")
 end, { desc = "Git restore all" })
+local cheats = require("util.cheats_picker")
+
+vim.keymap.set("n", "<leader>cs", cheats.search(), {
+  desc = "Search Cheatsheets",
+})
+
+vim.keymap.set("n", "<leader>cf", cheats.files(), {
+  desc = "Find Cheatsheet File",
+})
